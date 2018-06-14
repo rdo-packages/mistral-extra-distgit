@@ -59,6 +59,24 @@
     },
     {
       "key": {
+        "uuid": "bab921fb_1641d70b",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 448
+      },
+      "writtenOn": "2018-06-14T19:59:59Z",
+      "side": 1,
+      "message": "thanks.",
+      "parentUuid": "bab921fb_db96ea93",
+      "revId": "403022fb53b69e5dd78e86406404cc917aff85f7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bab921fb_7b8d9e7a",
         "filename": "python-mistral-extra.spec",
         "patchSetId": 1
@@ -76,6 +94,24 @@
     },
     {
       "key": {
+        "uuid": "bab921fb_f6454317",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 448
+      },
+      "writtenOn": "2018-06-14T19:59:59Z",
+      "side": 1,
+      "message": "thanks.",
+      "parentUuid": "bab921fb_7b8d9e7a",
+      "revId": "403022fb53b69e5dd78e86406404cc917aff85f7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bab921fb_5be9ba19",
         "filename": "python-mistral-extra.spec",
         "patchSetId": 1
@@ -87,6 +123,24 @@
       "writtenOn": "2018-06-14T10:17:44Z",
       "side": 1,
       "message": "%py2_install",
+      "revId": "403022fb53b69e5dd78e86406404cc917aff85f7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab921fb_d64b5f2a",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 448
+      },
+      "writtenOn": "2018-06-14T19:59:59Z",
+      "side": 1,
+      "message": "thanks.",
+      "parentUuid": "bab921fb_5be9ba19",
       "revId": "403022fb53b69e5dd78e86406404cc917aff85f7",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
