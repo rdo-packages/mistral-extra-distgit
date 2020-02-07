@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "fe602158_93afeac1",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 31
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 180
+      },
+      "writtenOn": "2020-02-07T11:48:52Z",
+      "side": 1,
+      "message": "Sure thing. I copied this from the mistral-lib package, we may want to update that too.",
+      "parentUuid": "445dbc2a_c30aeeac",
+      "range": {
+        "startLine": 133,
+        "startChar": 0,
+        "endLine": 133,
+        "endChar": 42
+      },
+      "revId": "d1a7020884e0fc202439b64548035c3b9f4db27e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "00c3ceb3_458a825d",
         "filename": "python-mistral-extra.spec",
         "patchSetId": 31
@@ -36,6 +60,30 @@
       "writtenOn": "2020-02-07T10:52:19Z",
       "side": 1,
       "message": "Similar to above, most packages have standardized on using stestr, so please change this line to:\n\nstestr-%{pyver} run",
+      "range": {
+        "startLine": 142,
+        "startChar": 0,
+        "endLine": 142,
+        "endChar": 26
+      },
+      "revId": "d1a7020884e0fc202439b64548035c3b9f4db27e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6fc9b1a7_900ad38e",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 31
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 180
+      },
+      "writtenOn": "2020-02-07T11:48:52Z",
+      "side": 1,
+      "message": "Done! Hope I got it correct :)",
+      "parentUuid": "00c3ceb3_458a825d",
       "range": {
         "startLine": 142,
         "startChar": 0,
