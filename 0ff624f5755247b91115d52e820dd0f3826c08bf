@@ -2,6 +2,75 @@
   "comments": [
     {
       "key": {
+        "uuid": "caffaf64_742acb0b",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 35
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 185
+      },
+      "writtenOn": "2020-02-12T09:03:56Z",
+      "side": 1,
+      "message": "duplicate line 55",
+      "range": {
+        "startLine": 46,
+        "startChar": 31,
+        "endLine": 46,
+        "endChar": 49
+      },
+      "revId": "0ff624f5755247b91115d52e820dd0f3826c08bf",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "463946d7_9176d342",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 35
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 185
+      },
+      "writtenOn": "2020-02-12T09:03:56Z",
+      "side": 1,
+      "message": "duplicate line 56",
+      "range": {
+        "startLine": 50,
+        "startChar": 31,
+        "endLine": 50,
+        "endChar": 51
+      },
+      "revId": "0ff624f5755247b91115d52e820dd0f3826c08bf",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4666a9e8_e0065aad",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 35
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 185
+      },
+      "writtenOn": "2020-02-12T09:03:56Z",
+      "side": 1,
+      "message": "duplicate line 69",
+      "range": {
+        "startLine": 51,
+        "startChar": 31,
+        "endLine": 51,
+        "endChar": 56
+      },
+      "revId": "0ff624f5755247b91115d52e820dd0f3826c08bf",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "febd9ba9_5d4a26f8",
         "filename": "python-mistral-extra.spec",
         "patchSetId": 35
