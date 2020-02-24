@@ -179,3 +179,4 @@ stestr-%{pyver} run
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/mistral-extra/commit/?id=5a641a9166d4cb8caf1811c2fe64bc18ae5ddf27
