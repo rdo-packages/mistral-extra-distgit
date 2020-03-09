@@ -144,6 +144,9 @@ This package contains the documentation.
 %prep
 %autosetup -n %{library}-%{upstream_version} -S git
 
+
+
+
 # Let's handle dependencies ourseleves
 %py_req_cleanup
 
@@ -156,9 +159,12 @@ sphinx-build-%{pyver} -b html doc/source doc/build/html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
+        mock_rm.assert_not_called()
 
 %install
 %{pyver_install}
+
+install -p -D -m 644 ./mistral_extra/actions/openstack/mapping.json %{buildroot}%{pyver_sitelib}/%{service}/actions/openstack/mapping.json
 
 %check
 stestr-%{pyver} run
