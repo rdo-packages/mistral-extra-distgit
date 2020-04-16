@@ -1,14 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver %{python3_pkgversion}
-%else
-%global pyver 2
-%endif
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
-# End of macros for py2/py3 compatibility
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global with_doc 1
 %global rhosp 0
@@ -32,96 +21,97 @@ BuildArch:  noarch
 BuildRequires:  git
 BuildRequires:  openstack-macros
 
-%package -n python%{pyver}-%{library}
+%package -n python3-%{library}
 Summary:    Python library containting Mistral actions
-%{?python_provide:%python_provide python%{pyver}-%{library}}
+%{?python_provide:%python_provide python3-%{library}}
 
-BuildRequires:  python%{pyver}-devel
-BuildRequires:  python%{pyver}-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
 
-BuildRequires:  python%{pyver}-oslotest
+BuildRequires:  python3-oslotest
 
-BuildRequires:       python%{pyver}-pbr >= 2.0.0
-BuildRequires:       python%{pyver}-babel >= 2.3.4
-BuildRequires:       python%{pyver}-oslo-log >= 3.36.0
-BuildRequires:       python%{pyver}-mistral-lib >= 1.4.0
-BuildRequires:       python%{pyver}-yaql >= 1.1.3
-BuildRequires:       python%{pyver}-oauthlib >= 0.6.2
+BuildRequires:       python3-pbr >= 2.0.0
+BuildRequires:       python3-babel >= 2.3.4
+BuildRequires:       python3-oslo-log >= 3.36.0
+BuildRequires:       python3-mistral-lib >= 1.4.0
+BuildRequires:       python3-yaql >= 1.1.3
+BuildRequires:       python3-oauthlib >= 0.6.2
+BuildRequires:       python3-stestr >= 2.0.0
 
-BuildRequires:       python%{pyver}-aodhclient >= 0.9.0
-BuildRequires:       python%{pyver}-barbicanclient >= 4.5.2
-BuildRequires:       python%{pyver}-cinderclient >= 3.3.0
-BuildRequires:       python%{pyver}-designateclient >= 2.7.0
-BuildRequires:       python%{pyver}-glanceclient >= 1:2.8.0
-BuildRequires:       python%{pyver}-gnocchiclient >= 3.3.1
-BuildRequires:       python%{pyver}-heatclient >= 1.10.0
-BuildRequires:       python%{pyver}-ironic-inspector-client >= 1.5.0
-BuildRequires:       python%{pyver}-ironicclient >= 2.7.0
-BuildRequires:       python%{pyver}-keystoneauth1 >= 3.18.0
-BuildRequires:       python%{pyver}-keystoneclient >= 1:3.8.0
-BuildRequires:       python%{pyver}-magnumclient >= 2.15.0
-BuildRequires:       python%{pyver}-manilaclient >= 1.23.0
-BuildRequires:       python%{pyver}-mistralclient >= 3.1.0
-BuildRequires:       python%{pyver}-neutronclient >= 6.7.0
-BuildRequires:       python%{pyver}-novaclient >= 1:9.1.0
-BuildRequires:       python%{pyver}-swiftclient >= 3.2.0
-BuildRequires:       python%{pyver}-troveclient >= 2.2.0
-BuildRequires:       python%{pyver}-zaqarclient >= 1.0.0
+BuildRequires:       python3-aodhclient >= 0.9.0
+BuildRequires:       python3-barbicanclient >= 4.5.2
+BuildRequires:       python3-cinderclient >= 3.3.0
+BuildRequires:       python3-designateclient >= 2.7.0
+BuildRequires:       python3-glanceclient >= 1:2.8.0
+BuildRequires:       python3-gnocchiclient >= 3.3.1
+BuildRequires:       python3-heatclient >= 1.10.0
+BuildRequires:       python3-ironic-inspector-client >= 1.5.0
+BuildRequires:       python3-ironicclient >= 2.7.0
+BuildRequires:       python3-keystoneauth1 >= 3.18.0
+BuildRequires:       python3-keystoneclient >= 1:3.8.0
+BuildRequires:       python3-magnumclient >= 2.15.0
+BuildRequires:       python3-manilaclient >= 1.23.0
+BuildRequires:       python3-mistralclient >= 3.1.0
+BuildRequires:       python3-neutronclient >= 6.7.0
+BuildRequires:       python3-novaclient >= 1:9.1.0
+BuildRequires:       python3-swiftclient >= 3.2.0
+BuildRequires:       python3-troveclient >= 2.2.0
+BuildRequires:       python3-zaqarclient >= 1.0.0
 %if 0%{rhosp} == 0
-BuildRequires:       python%{pyver}-glareclient >= 0.3.0
-BuildRequires:       python%{pyver}-muranoclient >= 1.3.0
-BuildRequires:       python%{pyver}-senlinclient >= 1.11.0
-BuildRequires:       python%{pyver}-tackerclient >= 0.8.0
-BuildRequires:       python%{pyver}-vitrageclient >= 2.0.0
+BuildRequires:       python3-glareclient >= 0.3.0
+BuildRequires:       python3-muranoclient >= 1.3.0
+BuildRequires:       python3-senlinclient >= 1.11.0
+BuildRequires:       python3-tackerclient >= 0.8.0
+BuildRequires:       python3-vitrageclient >= 2.0.0
 %endif
 
-Requires:       python%{pyver}-pbr >= 2.0.0
-Requires:       python%{pyver}-babel >= 2.3.4
-Requires:       python%{pyver}-oslo-log >= 3.36.0
-Requires:       python%{pyver}-mistral-lib >= 1.4.0
-Requires:       python%{pyver}-yaql >= 1.1.3
-Requires:       python%{pyver}-oauthlib >= 0.6.2
-Requires:       python%{pyver}-aodhclient >= 0.9.0
-Requires:       python%{pyver}-barbicanclient >= 4.5.2
-Requires:       python%{pyver}-cinderclient >= 3.3.0
-Requires:       python%{pyver}-designateclient >= 2.7.0
-Requires:       python%{pyver}-glanceclient >= 1:2.8.0
-Requires:       python%{pyver}-gnocchiclient >= 3.3.1
-Requires:       python%{pyver}-heatclient >= 1.10.0
-Requires:       python%{pyver}-ironic-inspector-client >= 1.5.0
-Requires:       python%{pyver}-ironicclient >= 2.7.0
-Requires:       python%{pyver}-keystoneauth1 >= 3.18.0
-Requires:       python%{pyver}-keystoneclient >= 1:3.8.0
-Requires:       python%{pyver}-magnumclient >= 2.15.0
-Requires:       python%{pyver}-manilaclient >= 1.23.0
-Requires:       python%{pyver}-mistralclient >= 3.1.0
-Requires:       python%{pyver}-neutronclient >= 6.7.0
-Requires:       python%{pyver}-novaclient >= 1:9.1.0
-Requires:       python%{pyver}-swiftclient >= 3.2.0
-Requires:       python%{pyver}-troveclient >= 2.2.0
-Requires:       python%{pyver}-zaqarclient >= 1.0.0
+Requires:       python3-pbr >= 2.0.0
+Requires:       python3-babel >= 2.3.4
+Requires:       python3-oslo-log >= 3.36.0
+Requires:       python3-mistral-lib >= 1.4.0
+Requires:       python3-yaql >= 1.1.3
+Requires:       python3-oauthlib >= 0.6.2
+Requires:       python3-aodhclient >= 0.9.0
+Requires:       python3-barbicanclient >= 4.5.2
+Requires:       python3-cinderclient >= 3.3.0
+Requires:       python3-designateclient >= 2.7.0
+Requires:       python3-glanceclient >= 1:2.8.0
+Requires:       python3-gnocchiclient >= 3.3.1
+Requires:       python3-heatclient >= 1.10.0
+Requires:       python3-ironic-inspector-client >= 1.5.0
+Requires:       python3-ironicclient >= 2.7.0
+Requires:       python3-keystoneauth1 >= 3.18.0
+Requires:       python3-keystoneclient >= 1:3.8.0
+Requires:       python3-magnumclient >= 2.15.0
+Requires:       python3-manilaclient >= 1.23.0
+Requires:       python3-mistralclient >= 3.1.0
+Requires:       python3-neutronclient >= 6.7.0
+Requires:       python3-novaclient >= 1:9.1.0
+Requires:       python3-swiftclient >= 3.2.0
+Requires:       python3-troveclient >= 2.2.0
+Requires:       python3-zaqarclient >= 1.0.0
 %if 0%{rhosp} == 0
-Requires:       python%{pyver}-glareclient >= 0.3.0
-Requires:       python%{pyver}-muranoclient >= 1.3.0
-Requires:       python%{pyver}-senlinclient >= 1.11.0
-Requires:       python%{pyver}-tackerclient >= 0.8.0
-Requires:       python%{pyver}-vitrageclient >= 2.0.0
+Requires:       python3-glareclient >= 0.3.0
+Requires:       python3-muranoclient >= 1.3.0
+Requires:       python3-senlinclient >= 1.11.0
+Requires:       python3-tackerclient >= 0.8.0
+Requires:       python3-vitrageclient >= 2.0.0
 %endif
 
-%description -n python%{pyver}-%{library}
+%description -n python3-%{library}
 %{common_desc}
 
 
-%package -n python%{pyver}-%{library}-tests
+%package -n python3-%{library}-tests
 Summary:    Mistral extras library tests
-%{?python_provide:%python_provide python%{pyver}-%{library}-tests}
-Requires:   python%{pyver}-%{library} = %{version}-%{release}
+%{?python_provide:%python_provide python3-%{library}-tests}
+Requires:   python3-%{library} = %{version}-%{release}
 
-Requires:       python%{pyver}-oslotest
-Requires:       python%{pyver}-subunit
-Requires:       python%{pyver}-testrepository
+Requires:       python3-oslotest
+Requires:       python3-subunit
+Requires:       python3-testrepository
 
-%description -n python%{pyver}-%{library}-tests
+%description -n python3-%{library}-tests
 Mistral extras library tests.
 
 This package contains the Mistral extras library test files.
@@ -130,8 +120,8 @@ This package contains the Mistral extras library test files.
 %package -n python-%{library}-doc
 Summary:    Mistral extras library documentation
 
-BuildRequires: python%{pyver}-sphinx
-BuildRequires: python%{pyver}-openstackdocstheme
+BuildRequires: python3-sphinx
+BuildRequires: python3-openstackdocstheme
 
 %description -n python-%{library}-doc
 Mistral extras library documentation
@@ -150,29 +140,29 @@ This package contains the documentation.
 %py_req_cleanup
 
 %build
-%{pyver_build}
+%{py3_build}
 
 %if 0%{?with_doc}
 # generate html docs
-sphinx-build-%{pyver} -b html doc/source doc/build/html
-# remove the sphinx-build-%{pyver} leftovers
+sphinx-build-3 -b html doc/source doc/build/html
+# remove the sphinx-build-3 leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %install
-%{pyver_install}
+%{py3_install}
 
 %check
-stestr-%{pyver} run
+stestr-3 run
 
-%files -n python%{pyver}-%{library}
+%files -n python3-%{library}
 %license LICENSE
-%{pyver_sitelib}/%{module}
-%{pyver_sitelib}/%{module}-*.egg-info
-%exclude %{pyver_sitelib}/%{module}/tests
+%{python3_sitelib}/%{module}
+%{python3_sitelib}/%{module}-*.egg-info
+%exclude %{python3_sitelib}/%{module}/tests
 
-%files -n python%{pyver}-%{library}-tests
-%{pyver_sitelib}/%{module}/tests
+%files -n python3-%{library}-tests
+%{python3_sitelib}/%{module}/tests
 
 %if 0%{?with_doc}
 %files -n python-%{library}-doc
