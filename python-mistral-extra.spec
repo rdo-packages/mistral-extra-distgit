@@ -171,3 +171,4 @@ stestr-3 run
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/mistral-extra/commit/?id=f4272e3e3aba13cd829aea5fdd667de995d6adcc
