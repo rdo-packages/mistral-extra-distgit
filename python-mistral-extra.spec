@@ -8,8 +8,8 @@
 %global common_desc Python library containting Mistral actions
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    10.1.0
+Release:    1%{?dist}
 Summary:    Python library containting Mistral actions
 License:    ASL 2.0
 URL:        http://launchpad.net/mistral/
@@ -171,3 +171,6 @@ stestr-3 run
 %endif
 
 %changelog
+* Mon Sep 21 2020 RDO <dev@lists.rdoproject.org> 10.1.0-1
+- Update to 10.1.0
+
