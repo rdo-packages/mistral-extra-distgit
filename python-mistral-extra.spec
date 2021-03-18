@@ -45,7 +45,7 @@ BuildRequires:  python3-oslotest
 BuildRequires:       python3-pbr >= 2.0.0
 BuildRequires:       python3-babel >= 2.3.4
 BuildRequires:       python3-oslo-log >= 3.36.0
-BuildRequires:       python3-mistral-lib >= 1.4.0
+BuildRequires:       python3-mistral-lib >= 2.3.0
 BuildRequires:       python3-yaql >= 1.1.3
 BuildRequires:       python3-oauthlib >= 0.6.2
 BuildRequires:       python3-stestr >= 2.0.0
