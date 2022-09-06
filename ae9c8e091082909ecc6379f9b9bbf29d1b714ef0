@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41cc531e_c144680e",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-09-06T13:47:15Z",
+      "side": 1,
+      "message": "It\u0027s needed for downstream, you can see the rhosp flag",
+      "revId": "ae9c8e091082909ecc6379f9b9bbf29d1b714ef0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
