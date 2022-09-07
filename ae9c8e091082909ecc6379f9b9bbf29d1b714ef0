@@ -16,6 +16,24 @@
       "message": "It\u0027s needed for downstream, you can see the rhosp flag",
       "revId": "ae9c8e091082909ecc6379f9b9bbf29d1b714ef0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad0fa40c_67a0191b",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-09-07T09:32:43Z",
+      "side": 1,
+      "message": "ok, so abandoning this PR",
+      "parentUuid": "41cc531e_c144680e",
+      "revId": "ae9c8e091082909ecc6379f9b9bbf29d1b714ef0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
