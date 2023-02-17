@@ -70,7 +70,6 @@ BuildRequires:       python3-swiftclient >= 3.2.0
 BuildRequires:       python3-troveclient >= 2.2.0
 BuildRequires:       python3-zaqarclient >= 1.0.0
 %if 0%{rhosp} == 0
-BuildRequires:       python3-glareclient >= 0.3.0
 BuildRequires:       python3-muranoclient >= 1.3.0
 BuildRequires:       python3-senlinclient >= 1.11.0
 BuildRequires:       python3-tackerclient >= 0.8.0
@@ -103,7 +102,6 @@ Requires:       python3-swiftclient >= 3.2.0
 Requires:       python3-troveclient >= 2.2.0
 Requires:       python3-zaqarclient >= 1.0.0
 %if 0%{rhosp} == 0
-Requires:       python3-glareclient >= 0.3.0
 Requires:       python3-muranoclient >= 1.3.0
 Requires:       python3-senlinclient >= 1.11.0
 Requires:       python3-tackerclient >= 0.8.0
