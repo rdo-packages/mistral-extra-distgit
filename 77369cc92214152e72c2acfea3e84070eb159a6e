@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d11674f5_13ade410",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-02-17T15:24:42Z",
+      "side": 1,
+      "message": "Hmm this commit is already built https://trunk.rdoproject.org/centos9-master/component/tripleo/current/python3-mistral-extra-12.1.0-0.20230110064409.e0687d6.el9.noarch.rpm since January 10 2023",
+      "revId": "77369cc92214152e72c2acfea3e84070eb159a6e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
