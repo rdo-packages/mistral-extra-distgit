@@ -167,7 +167,8 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %{py3_install}
 
 %check
-stestr-3 run
+# excluding one test due to upstream bug related to barbicanclient
+stestr-3 run --exclude-regex 'mistral_extra.tests.unit.actions.openstack.test_generator.GeneratorTest.test_generator'
 
 %files -n python3-%{library}
 %license LICENSE
