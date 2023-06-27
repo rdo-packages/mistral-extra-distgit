@@ -22,6 +22,30 @@
       },
       "revId": "cab06fc4fb4be1c5959f4efc341bf779660d5c62",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0e83d0a_8e4235fb",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-27T14:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "556ae8d6_f68c97e0",
+      "range": {
+        "startLine": 63,
+        "startChar": 0,
+        "endLine": 68,
+        "endChar": 4
+      },
+      "revId": "cab06fc4fb4be1c5959f4efc341bf779660d5c62",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
