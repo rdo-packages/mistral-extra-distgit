@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dd4953bf_4af83a89",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-28T10:21:19Z",
+      "side": 1,
+      "message": "the variable rhosp should be declared before line 5",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 15
+      },
+      "revId": "fc5a97e9b5286e280249853a4a380470ef9ac5b8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
