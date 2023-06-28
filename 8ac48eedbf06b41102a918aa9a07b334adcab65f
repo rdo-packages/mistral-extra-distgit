@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d6e897ed_ba44eac1",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-28T07:31:42Z",
+      "side": 1,
+      "message": "We can remove this line too",
+      "range": {
+        "startLine": 140,
+        "startChar": 0,
+        "endLine": 140,
+        "endChar": 20
+      },
+      "revId": "8ac48eedbf06b41102a918aa9a07b334adcab65f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
