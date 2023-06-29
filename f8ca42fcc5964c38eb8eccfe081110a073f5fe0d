@@ -45,6 +45,30 @@
       },
       "revId": "f8ca42fcc5964c38eb8eccfe081110a073f5fe0d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a10a6db_31df2791",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-06-29T08:47:34Z",
+      "side": 1,
+      "message": "if these are only Runtime-Req, why it was explicitly picked as BR for rhosp in https://review.rdoproject.org/r/c/openstack/mistral-extra-distgit/+/49049/6/python-mistral-extra.spec#b73?",
+      "parentUuid": "16bf9860_1893e65a",
+      "range": {
+        "startLine": 19,
+        "startChar": 92,
+        "endLine": 19,
+        "endChar": 143
+      },
+      "revId": "f8ca42fcc5964c38eb8eccfe081110a073f5fe0d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
