@@ -1,6 +1,46 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "478349a2_0f70fa03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-29T13:46:08Z",
+      "side": 1,
+      "message": "let\u0027s use 0%{?rhosp} for consistency",
+      "revId": "f8ca42fcc5964c38eb8eccfe081110a073f5fe0d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "933f885d_11825a82",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-29T13:46:08Z",
+      "side": 1,
+      "message": "0%{?rhosp}",
+      "range": {
+        "startLine": 8,
+        "startChar": 7,
+        "endLine": 8,
+        "endChar": 12
+      },
+      "revId": "f8ca42fcc5964c38eb8eccfe081110a073f5fe0d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "29d424f6_60ae2e1b",
@@ -19,6 +59,29 @@
         "startChar": 39,
         "endLine": 12,
         "endChar": 51
+      },
+      "revId": "f8ca42fcc5964c38eb8eccfe081110a073f5fe0d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab1cebf0_ee08ff1a",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-29T13:46:08Z",
+      "side": 1,
+      "message": "0%{?rhosp}",
+      "range": {
+        "startLine": 15,
+        "startChar": 7,
+        "endLine": 15,
+        "endChar": 12
       },
       "revId": "f8ca42fcc5964c38eb8eccfe081110a073f5fe0d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
