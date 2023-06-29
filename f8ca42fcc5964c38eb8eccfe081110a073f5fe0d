@@ -18,6 +18,24 @@
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "56ab2d2f_10059293",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-29T13:53:25Z",
+      "side": 1,
+      "message": "FTR, it failed in PS5 because of \"?\" (default value) missing and not the order as I said earlier",
+      "parentUuid": "478349a2_0f70fa03",
+      "revId": "f8ca42fcc5964c38eb8eccfe081110a073f5fe0d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "933f885d_11825a82",
