@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c260eb5b_5c5468d1",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-30T14:01:03Z",
+      "side": 1,
+      "message": "i think this should be python-muranoclient, python-senlinclient python-tackerclient python-vitrageclient\n\nhttps://github.com/openstack/mistral-extra/blob/master/requirements.txt#L15-L34",
+      "range": {
+        "startLine": 12,
+        "startChar": 39,
+        "endLine": 12,
+        "endChar": 91
+      },
+      "revId": "bf51ca72db7505fa1d6b089fda95773ea302ea9c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "91398f4e_f9db66d8",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2023-06-30T14:01:03Z",
+      "side": 1,
+      "message": "Let\u0027s add:\n\n# Exclude sphinx from BRs if docs are disabled\n%if ! 0%{?with_doc}\n%global excluded_brs %{excluded_brs} sphinx openstackdocstheme\n%endif\n\nTo make sure we don\u0027t have sphinx as BR if the package is built settint with_doc to 0",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 24
+      },
+      "revId": "bf51ca72db7505fa1d6b089fda95773ea302ea9c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
