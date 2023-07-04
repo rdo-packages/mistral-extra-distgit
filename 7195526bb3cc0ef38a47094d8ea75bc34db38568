@@ -16,6 +16,29 @@
       "message": "recheck",
       "revId": "7195526bb3cc0ef38a47094d8ea75bc34db38568",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e27e1ee_0cd0c697",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-04T15:22:38Z",
+      "side": 1,
+      "message": "the condtionnal is reversed, we should exclude python-zunclient python-muranoclient python-senlinclient python-tackerclient python-vitrageclient in the %if not the %else",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 6
+      },
+      "revId": "7195526bb3cc0ef38a47094d8ea75bc34db38568",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
