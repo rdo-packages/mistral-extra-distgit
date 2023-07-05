@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c2540df_a50b03ad",
+        "filename": "python-mistral-extra.spec",
+        "patchSetId": 9
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-05T15:01:05Z",
+      "side": 1,
+      "message": "it should be defined before l.15 otherwise l.16 is overridden by this line, leading to not have sphinx and openstackdocstheme in the exclusion\n\nTo test it:\nsed -i \"s/%global with_doc.*/%global with_doc 0/\" python-mistral-extra.spec\nrpmspec -P python-mistral-extra.spec | grep -e \"sphinx openstackdocstheme\"",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 90
+      },
+      "revId": "e24e855eb7711de72f75c594a47ce8036efa77e2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
