@@ -151,3 +151,4 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/mistral-extra/commit/2e0139b9b2ef9d23f889c148a641d0ea3b631102
