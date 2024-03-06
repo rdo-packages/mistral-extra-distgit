@@ -9,7 +9,7 @@
 # we are excluding some runtime reqs from automatic generator
 %global excluded_reqs python-zunclient python-muranoclient python-senlinclient python-tackerclient python-vitrageclient
 %else
-%global excluded_reqs python-zunclient
+%global excluded_reqs python-zunclient python-muranoclient python-senlinclient
 %endif
 
 %global excluded_brs doc8 bandit pre-commit hacking flake8-import-order coverage unittest2
