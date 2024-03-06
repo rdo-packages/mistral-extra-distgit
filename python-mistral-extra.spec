@@ -9,7 +9,7 @@
 # we are excluding some runtime reqs from automatic generator
 %global excluded_reqs python-zunclient python-muranoclient python-senlinclient python-tackerclient python-vitrageclient
 %else
-%global excluded_reqs python-zunclient
+%global excluded_reqs python-zunclient python-muranoclient python-senlinclient
 %endif
 
 %global excluded_brs doc8 bandit pre-commit hacking flake8-import-order coverage unittest2
@@ -134,6 +134,8 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %pyproject_install
 
 %check
+# muranoclient is removed since Caracal
+sed -i '/^.*murano.deployments_list.*/d' mistral_extra/tests/unit/actions/openstack/test_generator.py
 %tox -e %{default_toxenv}
 
 %files -n python3-%{library}
