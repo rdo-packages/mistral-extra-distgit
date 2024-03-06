@@ -1,0 +1,31 @@
+From 5118573e2cbcb6952e87ab107b375ab1279d2c3e Mon Sep 17 00:00:00 2001
+From: Alfredo Moralejo <amoralej@redhat.com>
+Date: Thu, 7 Mar 2024 09:09:10 +0100
+Subject: [PATCH] Remove Murano and Senlin from supported modules
+
+Murano an Senlin have been declared inactive in Caracal release ans will
+not be included in the RDO release.
+
+Change-Id: I584b9c581b5eb6c2863294d091d692aeae48f2b6
+---
+ mistral_extra/actions/generator_factory.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/mistral_extra/actions/generator_factory.py b/mistral_extra/actions/generator_factory.py
+index 7845378..3bc529a 100644
+--- a/mistral_extra/actions/generator_factory.py
++++ b/mistral_extra/actions/generator_factory.py
+@@ -20,8 +20,8 @@ from mistral_extra.actions.openstack.action_generator import base
+ SUPPORTED_MODULES = [
+     'Nova', 'Glance', 'Keystone', 'Heat', 'Neutron', 'Cinder',
+     'Trove', 'Ironic', 'Baremetal Introspection', 'Swift', 'SwiftService',
+-    'Zaqar', 'Barbican', 'Mistral', 'Designate', 'Magnum', 'Murano', 'Tacker',
+-    'Aodh', 'Gnocchi', 'Vitrage', 'Senlin', 'Zun', 'Manila'
++    'Zaqar', 'Barbican', 'Mistral', 'Designate', 'Magnum', 'Tacker',
++    'Aodh', 'Gnocchi', 'Vitrage', 'Zun', 'Manila'
+ ]
+ 
+ 
+-- 
+2.38.1
+

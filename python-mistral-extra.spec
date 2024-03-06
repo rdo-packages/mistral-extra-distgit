@@ -9,7 +9,7 @@
 # we are excluding some runtime reqs from automatic generator
 %global excluded_reqs python-zunclient python-muranoclient python-senlinclient python-tackerclient python-vitrageclient
 %else
-%global excluded_reqs python-zunclient
+%global excluded_reqs python-zunclient python-muranoclient python-senlinclient
 %endif
 
 %global excluded_brs doc8 bandit pre-commit hacking flake8-import-order coverage unittest2
@@ -30,6 +30,8 @@ License:    Apache-2.0
 URL:        http://launchpad.net/mistral/
 
 Source0:    http://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz
+# Murano and Senlin have been declared inactive in Caracal
+Patch1:     0001-Remove-Murano-and-Senlin-from-supported-modules.patch
 # Required for tarball sources verification
 %if 0%{?sources_gpg} == 1
 Source101:        http://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz.asc
