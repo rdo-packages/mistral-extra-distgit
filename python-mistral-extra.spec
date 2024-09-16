@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
+%global sources_gpg_sign 0xf8675126e2411e7748dd46662fc2093e4682645f
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %global with_doc 1
@@ -23,8 +23,8 @@
 %global common_desc Python library containting Mistral actions
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    13.3.0
+Release:    1%{?dist}
 Summary:    Python library containting Mistral actions
 License:    Apache-2.0
 URL:        http://launchpad.net/mistral/
@@ -155,3 +155,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Mon Sep 16 2024 RDO <dev@lists.rdoproject.org> 13.3.0-1
+- Update to 13.3.0
+
