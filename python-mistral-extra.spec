@@ -30,8 +30,6 @@ License:    Apache-2.0
 URL:        http://launchpad.net/mistral/
 
 Source0:    http://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz
-# Murano and Senlin have been declared inactive in Caracal
-Patch1:     0001-Remove-Murano-and-Senlin-from-supported-modules.patch
 # Required for tarball sources verification
 %if 0%{?sources_gpg} == 1
 Source101:        http://tarballs.openstack.org/%{library}/%{library}-%{upstream_version}.tar.gz.asc
