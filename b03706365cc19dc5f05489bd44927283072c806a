@@ -1,0 +1,8 @@
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 24 Sep 2024 07:26:32 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/mistral-extra-distgit/+/54564
+Project: openstack/mistral-extra-distgit
+Branch: refs/heads/rpm-master
