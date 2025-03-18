@@ -23,8 +23,8 @@
 %global common_desc Python library containting Mistral actions
 
 Name:       python-%{library}
-Version:    XXX
-Release:    XXX
+Version:    15.0.0
+Release:    1%{?dist}
 Summary:    Python library containting Mistral actions
 License:    Apache-2.0
 URL:        http://launchpad.net/mistral/
@@ -153,3 +153,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Tue Mar 18 2025 RDO <dev@lists.rdoproject.org> 15.0.0-1
+- Update to 15.0.0
+
